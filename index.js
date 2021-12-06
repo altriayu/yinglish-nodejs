@@ -20,14 +20,12 @@ const transService = function (x, y, nastyDegree) {
 
 export const transWordToYinglish = function (s, nastyDegree = 0.5) {
   const wordArr = jieba.tag(s)
-  console.log(wordArr)
   return wordArr.map((item) => {
     return transService(item.word, item.tag, nastyDegree)
   }).join('')
 }
 
 export const transFileAndSave = function (filePath, nastyDegree = 0.5) {
-  // console.log(fs.readFileSync(path).toString())
   let s = fs.readFileSync(filePath).toString()
   const wordArr = jieba.tag(s)
   let res =  wordArr.map((item) => {
