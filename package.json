@@ -1,6 +1,6 @@
 {
   "name": "yinglish-nodejs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "可以将字符串变得淫荡，也可以将文本一键处理",
   "main": "index.js",
   "scripts": {
