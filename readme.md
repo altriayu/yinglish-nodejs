@@ -10,10 +10,10 @@
 import {transWordToYinglish, transFileAndSave} from 'yinglish-nodejs'
 
 console.log(transWordToYinglish('嘉然小姐，你带我走吧！'))
-//嘉然小姐……你带我走...走吧❤
+//嘉然小姐……你带我走……走吧❤
 
 console.log(transWordToYinglish('嘉然小姐，我好想做你的狗啊！',  0.8))
-//嘉...嘉然小姐……我好想做你的狗...狗啊❤
+//嘉……嘉然小姐……我好想做你的狗……狗啊❤
 
 
 transFileAndSave('./赛博英雄传.txt')
