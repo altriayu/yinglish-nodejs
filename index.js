@@ -12,7 +12,7 @@ const transService = function (x, y, nastyDegree) {
       x = x.split("").map(item => '〇').join('')
       return `……${x}`
     }
-    return`${x[0]}...${x}`
+    return`${x[0]}……${x}`
   } else {
     return x
   }
